@@ -94,6 +94,8 @@ console.log(
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+// Non prevede il caso in cui siano uguale 2 o più numeri (DA SISTEMARE)
 const a = 9;
 const b = 12;
 const c = 1;
