@@ -95,44 +95,31 @@ console.log(
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-// Non prevede il caso in cui siano uguale 2 o più numeri (DA SISTEMARE)
-const a = 9;
-const b = 12;
-const c = 1;
+let a = 6;
+let b = 14;
+let c = 10;
 
-let biggerNumber;
-let middleNumber;
-let smallerNumber;
-
-if (a > b && a > c) {
-  biggerNumber = a;
-  if (b > c) {
-    middleNumber = b;
-    smallerNumber = c;
+if (a >= b) {
+  if (c >= a) {
+    console.log(c, a, b);
   } else {
-    middleNumber = c;
-    smallerNumber = b;
+    if (c >= b) {
+      console.log(a, c, b);
+    } else {
+      console.log(a, b, c);
+    }
   }
-} else if (b > a && b > c) {
-  biggerNumber = b;
-  if (a > c) {
-    middleNumber = a;
-    smallerNumber = c;
+} else {
+  if (c >= b) {
+    console.log(c, b, a);
   } else {
-    middleNumber = c;
-    smallerNumber = a;
-  }
-} else if (c > a && c > b) {
-  biggerNumber = c;
-  if (b > a) {
-    middleNumber = b;
-    smallerNumber = a;
-  } else {
-    middleNumber = a;
-    smallerNumber = b;
+    if (c >= a) {
+      console.log(b, c, a);
+    } else {
+      console.log(b, a, c);
+    }
   }
 }
-console.log(biggerNumber, middleNumber, smallerNumber);
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
